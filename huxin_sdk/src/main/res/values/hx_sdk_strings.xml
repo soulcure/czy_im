@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--xml中的string-->
+
+    <!--hx_sdk_filepreview-->
+    <string name="hx_sdk_file_name">文件名称</string>
+    <string name="hx_sdk_downloading2">正在下载&#8230;&#8230;&#8230;(%1$s/%2$s)</string>
+    <string name="hx_sdk_downloading_continue">继续下载</string>
+    <string name="hx_sdk_open_other_app">用其他应用打开</string>
+
+    <!--activity_media_dispay-->
+    <string name="hx_sdk_media_take_photo">拍摄照片</string>
+
+    <!-- string -->
+    <string name="hxs_mr_tip_1">↑上滑取消</string>
+    <string name="hxs_mr_tip_2">松开取消</string>
+    <string name="hxs_mr_change_camera_error">该手机设备不支持切换摄像头</string>
+
+
+    <!--hx_dialog_im_voice-->
+    <string name="hx_dialog_im_voice_01">滑到这里取消</string>
+    <string name="hx_dialog_im_voice_02">松开取消录音</string>
+
+    <!--hx_dialog_mediastore-->
+    <string name="hx_dialog_sendtofriend">发送给朋友</string>
+    <string name="hx_dialog_mediastore">保存到手机</string>
+
+
+    <!--hx_fragment_im_*-->
+    <string name="hx_fragment_im_data">2018.05.01 16:24</string>
+
+    <!--list null tip-->
+    <string name="hxm_viewstub_norecord_take_photo">按住拍</string>
+
+    <!--VoiceManager-->
+    <string name="hx_voice_manager_tip">语音权限已关闭,请打开！</string>
+
+    <!--MovieRecorderView-->
+    <string name="hx_camera_record_tip">摄像头权限已关闭,请打开！</string>
+
+    <!--CallFullView-->
+
+    <!--wheel 三级联动-->
+    <string name="hx_wheel_year">年</string>
+    <string name="hx_wheel_month">月</string>
+    <string name="hx_wheel_day">日</string>
+    <string name="hx_wheel_sure">确定</string>
+    <string name="hx_wheel_cancel">取消</string>
+    <string name="hx_wheel_male">男</string>
+    <string name="hx_wheel_female">女</string>
+
+    <!--file manager-->
+    <string name="hx_file_manager_weixin">微信</string>
+    <string name="hx_file_manager_qq">QQ</string>
+    <string name="hx_file_manager_download_content">下载内容</string>
+    <string name="hx_file_manager_txt">文档</string>
+    <string name="hx_file_manager_video">视频</string>
+    <string name="hx_file_manager_music">音乐</string>
+    <string name="hx_file_manager_download">下载</string>
+    <string name="hx_file_manager_app">应用</string>
+    <string name="hx_file_manager_zip">压缩包</string>
+    <string name="hx_file_manager_count">个文件</string>
+    <string name="hx_file_manager_select_01">选择文件&#160;>&#160;</string>
+    <string name="hx_file_manager_select_02">下载&#160;>&#160;</string>
+    <string name="hx_file_manager_select_03">选择文件</string>
+    <string name="hx_file_manager_no_file">暂无文件</string>
+    <string name="hx_file_manager_zero_count">0个文件</string>
+    <string name="hx_file_manager_loading">加载中&#8230;&#8230;&#8230;</string>
+
+    <!--日期&城市联动器-->
+
+    <!--wheelview-->
+    <string name="pickerview_cancel" translatable="false">取消</string>
+    <string name="pickerview_submit" translatable="false">完成</string>
+    <string name="pickerview_year" translatable="false">年</string>
+    <string name="pickerview_month" translatable="false">月</string>
+    <string name="pickerview_day" translatable="false">日</string>
+    <string name="pickerview_hours" translatable="false">时</string>
+    <string name="pickerview_minutes" translatable="false">分</string>
+    <string name="pickerview_seconds" translatable="false">秒</string>
+
+</resources>

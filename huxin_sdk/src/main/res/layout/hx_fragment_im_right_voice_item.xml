@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sender_date"
+        style="@style/im_card_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hx_fragment_im_data" />
+
+    <LinearLayout
+        style="@style/im_content_card_style"
+        android:gravity="right">
+
+        <include
+            layout="@layout/hx_im_send_status_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_head_to_content_margin"
+            android:layout_marginRight="@dimen/card_head_to_content_margin"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hx_im_voice_bg_right"
+                android:clickable="true"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/item_btn"
+                    android:layout_width="96dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sender_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:text="2&quot;"
+                        android:textColor="#E5F3FE"
+                        android:textSize="@dimen/card_font_size_msmall" />
+
+                    <ImageView
+                        android:id="@+id/voice_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/hx_im_right_anim_v3" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sender_iv"
+            android:layout_width="@dimen/card_head"
+            android:layout_height="@dimen/card_head"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/hx_im_user_header" />
+    </LinearLayout>
+
+</LinearLayout>

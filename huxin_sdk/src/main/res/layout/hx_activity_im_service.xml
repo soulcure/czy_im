@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youmai.hxsdk.view.chat.InputMessageLay xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/im_bg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--标题栏-->
+        <include layout="@layout/hx_im_header_title" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/hx_color_gray"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/relogin_msg"
+            android:textColor="@color/hxs_mr_color_red"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</com.youmai.hxsdk.view.chat.InputMessageLay>

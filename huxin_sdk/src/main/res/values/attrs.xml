@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <attr name="cropImageStyle" format="reference" />
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showCircle" format="boolean" />
+        <attr name="showHandles">
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+    <!--IM进度条-->
+    <attr name="progress_unreach_color" format="color" />
+    <attr name="progress_unreach_height" format="dimension" />
+    <attr name="progress_reach_color" format="color" />
+    <attr name="progress_reach_height" format="dimension" />
+    <attr name="progress_text_color" format="color" />
+    <attr name="progress_text_size" format="dimension" />
+    <attr name="progress_text_offset" format="dimension" />
+
+    <declare-styleable name="HorizontalProgressBar">
+        <attr name="progress_unreach_color" />
+        <attr name="progress_unreach_height" />
+        <attr name="progress_reach_color" />
+        <attr name="progress_reach_height" />
+        <attr name="progress_text_color" />
+        <attr name="progress_text_size" />
+        <attr name="progress_text_offset" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBarWithProgress">
+        <attr name="progress_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="circleProgressbar">
+        <attr name="progress_unreach_color" />
+        <attr name="progress_unreach_height" />
+        <attr name="progress_reach_color" />
+        <attr name="progress_reach_height" />
+        <attr name="progress_text_color" />
+        <attr name="progress_text_size" />
+        <attr name="progress_text_offset" />
+    </declare-styleable>
+
+    <!--点击水波纹效果-->
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="mrl_rippleColor" format="color" localization="suggested" />
+        <attr name="mrl_rippleDimension" format="dimension" localization="suggested" />
+        <attr name="mrl_rippleOverlay" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleAlpha" format="float" localization="suggested" />
+        <attr name="mrl_rippleDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleFadeDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleHover" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleBackground" format="color" localization="suggested" />
+        <attr name="mrl_rippleDelayClick" format="boolean" localization="suggested" />
+        <attr name="mrl_ripplePersistent" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleInAdapter" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleRoundedCorners" format="dimension" localization="suggested" />
+    </declare-styleable>
+
+    <!--收起展开textview-->
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="expandDrawable" format="reference" />
+        <attr name="collapseDrawable" format="reference" />
+        <attr name="contentTextColor" format="color" />
+        <attr name="collapseExpandTextColor" format="color" />
+        <attr name="contentTextSize" format="dimension" />
+        <attr name="collapseExpandTextSize" format="dimension" />
+        <attr name="textCollapse" format="string" />
+        <attr name="textExpand" format="string" />
+        <attr name="collapseExpandGrarity">
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+        </attr>
+        <attr name="drawableGrarity">
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+        </attr>
+    </declare-styleable>
+
+    <!--header-->
+    <declare-styleable name="HeaderViewPager">
+        <attr name="hvp_topOffset" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="color_tick" format="color" />
+        <attr name="color_checked" format="color" />
+        <attr name="color_unchecked" format="color" />
+        <attr name="color_unchecked_stroke" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="InputMessageLay">
+        <attr name="more_location_hidden" format="boolean" />
+        <attr name="more_file_hidden" format="boolean" />
+        <attr name="more_card_hidden" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="WaveView">
+        <attr name="avatar_radius" format="dimension" />
+        <attr name="avatar_outerRingOffset" format="dimension" />
+        <attr name="avatar_outerRingColor" format="color" />
+        <attr name="avatar_src" format="reference|color" />
+    </declare-styleable>
+
+    <!--file manager-->
+    <declare-styleable name="FileDownloadItemView">
+        <attr name="logo" format="reference" />
+        <attr name="name" format="string" />
+        <attr name="count" format="string" />
+    </declare-styleable>
+
+    <!--cammer-->
+    <attr name="iconSize" format="dimension" />
+    <attr name="iconMargin" format="dimension" />
+    <attr name="iconSrc" format="reference" />
+    <attr name="iconLeft" format="reference" />
+    <attr name="iconRight" format="reference" />
+    <attr name="duration_max" format="integer" />
+    <declare-styleable name="JCameraView">
+        <attr name="iconSize" />
+        <attr name="iconMargin" />
+        <attr name="iconSrc" />
+        <attr name="iconLeft" />
+        <attr name="iconRight" />
+        <attr name="duration_max" />
+    </declare-styleable>
+
+    <!--视频播放-->
+    <style name="Widget.SeekBar.Media" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:thumb">@drawable/hx_video_media_thumb</item>
+        <item name="android:maxHeight">2.5dp</item>
+        <item name="android:minHeight">2.5dp</item>
+        <item name="android:progressDrawable">@drawable/hx_player_video_progressbar</item>
+        <item name="android:thumbOffset">5dp</item>
+    </style>
+
+    <!--视频下载进度圈-->
+    <declare-styleable name="CircleProgressView">
+        <attr name="progressNormalColor" format="integer" />
+        <attr name="progressReachColor" format="integer" />
+        <attr name="progressTextColor" format="integer" />
+        <attr name="progressTextSize" format="integer" />
+        <attr name="progressNormalSize" format="dimension" />
+        <attr name="progressReachSize" format="dimension" />
+        <attr name="radius" format="dimension" />
+        <attr name="progressTextVisible" format="boolean" />
+        <attr name="progressStartArc" format="integer" />
+        <attr name="progressTextSkewX" format="float" />
+        <attr name="progressTextPrefix" format="string" />
+        <attr name="progressTextSuffix" format="string" />
+        <attr name="innerBackgroundColor" format="integer" />
+        <attr name="progressStyle" format="enum">
+            <enum name="Normal" value="0" />
+            <enum name="FillInner" value="1" />
+            <enum name="FillInnerArc" value="2" />
+        </attr>
+        <attr name="innerProgressColor" format="color" />
+        <attr name="innerPadding" format="dimension" />
+        <attr name="outerColor" format="color" />
+        <attr name="outerSize" format="dimension" />
+        <attr name="reachCapRound" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CopeTextView">
+        <attr name="position" format="integer">
+            <flag name="left" value="0" />
+            <flag name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--轮动日期&城市-->
+    <declare-styleable name="hx_pickerview">
+        <attr name="hx_pickerview_gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="hx_pickerview_textSize" format="dimension" />
+        <attr name="hx_pickerview_textColorOut" format="color" />
+        <attr name="hx_pickerview_textColorCenter" format="color" />
+        <attr name="hx_pickerview_dividerColor" format="color" />
+        <attr name="hx_pickerview_lineSpacingMultiplier" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="hxs_mr_MovieRecorderView">
+        <!-- 开始是否打开摄像头 -->
+        <attr name="is_open_camera" format="boolean" />
+        <!-- 一次拍摄最长时间 -->
+        <attr name="record_max_time" format="integer" />
+        <!-- 视频分辨率宽度 -->
+        <attr name="video_width" format="integer" />
+        <!-- 视频分辨率高度 -->
+        <attr name="video_height" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TeamHeadView">
+        <!--合成图片的背景-->
+        <attr name="synthesized_image_bg" format="color" />
+        <!--合成图片的默认图片-->
+        <attr name="synthesized_default_image" format="reference" />
+        <!--合成图片的尺寸-->
+        <attr name="synthesized_image_size" format="dimension" />
+        <!--多图片之间的空隙间隔-->
+        <attr name="synthesized_image_gap" format="dimension" />
+    </declare-styleable>
+
+</resources>

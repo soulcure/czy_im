@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_send_to_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:text="@string/hx_dialog_sendtofriend"
+        android:textColor="@drawable/hx_txt_selector"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6" />
+
+    <Button
+        android:id="@+id/btn_save_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:text="@string/hx_dialog_mediastore"
+        android:textColor="@drawable/hx_txt_selector"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:text="@string/hx_cancel"
+        android:textColor="@drawable/hx_txt_selector"
+        android:textSize="15sp" />
+
+</LinearLayout>

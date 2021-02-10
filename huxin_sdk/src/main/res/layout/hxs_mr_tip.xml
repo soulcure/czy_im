@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hxs_mr_shape_tip_bg">
+
+    <TextView
+        android:id="@+id/tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mr_shoot_button"
+        android:layout_gravity="center"
+        android:padding="7dp"
+        android:text="@string/hxs_mr_tip_1"
+        android:textColor="@color/hxs_mr_color_green"
+        android:textSize="14sp" />
+
+</FrameLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/keyboard_main_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/keyboard_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:contentDescription="@string/bar_voice_close_type"
+            android:padding="8dp"
+            android:src="@drawable/hx_im_bar_voice_normal" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/keyboard_msg_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hx_im_bar_chat_bg"
+                android:minHeight="32dp"
+                android:padding="0dp"
+                android:visibility="visible">
+
+                <com.youmai.hxsdk.view.chat.view.HadEditText
+                    android:id="@+id/keyboard_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:maxLength="3000"
+                    android:maxLines="5"
+                    android:padding="4dp"
+                    android:textColor="@color/hx_im_recording_text"
+                    android:textSize="@dimen/card_font_size_small" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/keyboard_msg_default_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hx_im_bar_chat_bg"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/keyboard_msg_default_up_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hx_voice_tip_normal"
+                    android:textSize="@dimen/card_font_size_small" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/hx_color_white">
+
+            <ImageView
+                android:id="@+id/keyboard_send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/keyboard_emotion"
+                android:layout_toRightOf="@+id/keyboard_emotion"
+                android:paddingBottom="8dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/hx_im_bar_send"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/keyboard_more"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/keyboard_emotion"
+                android:layout_toRightOf="@+id/keyboard_emotion"
+                android:contentDescription="@string/bar_more_type"
+                android:paddingBottom="8dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/hx_im_bar_open"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/keyboard_emotion"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/bar_emotion_type"
+                android:paddingBottom="8dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/hx_im_bar_emotion" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboard_more_lay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#f8f9f9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <ImageView
+            android:id="@+id/keyboard_more_forward_img"
+            style="@style/press_style"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_forward_svg" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/keyboard_more_garbage_img"
+            style="@style/press_style"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_garbage_svg" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/keyboard_footer_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f9f9"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

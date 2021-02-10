@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.youmai.hxsdk">
+
+    <!-- Normal Permissions start -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- Normal Permissions end -->
+
+
+    <!-- Dangous Permissions start -->
+    <!-- STORAGE -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--SMS-->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!--PHONE-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <!-- MICROPHONE -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--LOCATION-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--CONTACTS-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!--CAMERA-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Dangous Permissions end-->
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application>
+
+        <!-- *************************************** -->
+        <!-- 接入合作方APP 需要修改的API KEY值 begin -->
+        <!-- *************************************** -->
+
+        <!-- 高德地图 APPKEY-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="@string/amap_apikey" />
+
+        <activity
+            android:name=".LoginPromptActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxMsgTheme" />
+        <activity
+            android:name=".map.LocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" /> <!-- 剪裁页面 -->
+        <activity
+            android:name=".crop.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxWindowAnimTheme" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".activity.CropImageActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxMsgTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="img" />
+            </intent-filter>
+        </activity> <!-- 查看接受到的图片 -->
+        <activity
+            android:name=".activity.PictureIndicatorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".module.picker.PreviewImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".module.picker.PreviewVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".activity.CropMapActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxMsgTheme" /> <!-- 视频录制 -->
+        <activity
+            android:name=".module.movierecord.MovieRecodeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxMsgTheme" /> <!-- IM消息 -->
+        <activity
+            android:name=".chatsingle.IMConnectionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".charservice.IMOwnerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".charservice.ServiceMsgNotifyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".charservice.OwnerMsgListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".charservice.CommMsgListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+
+        <activity
+            android:name=".charservice.ScoreActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".charservice.ScoreHistoryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".charservice.ChatServiceDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+
+        <activity
+            android:name=".chatgroup.IMGroupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".group.ChatGroupDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".group.AddContactsCreateGroupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".group.DeleteContactListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".group.ChatGroupAllMembersActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".group.setting.GroupNameActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".group.setting.GroupNoticeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".group.setting.GroupManageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".chatgroup.GroupAtSelectActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxGroupAtTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".packet.RedPacketActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".packet.RedPacketInGroupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".packet.RedPacketDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".packet.RedPacketHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" /> <!-- IM文件预览、下载打开 -->
+        <activity
+            android:name=".IMFilePreviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".module.picker.PhotoPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".module.picker.PhotoDirectoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".picker.FilePickerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:noHistory="true"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".picker.MediaDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/HxSdkTheme" /> <!-- file manager start -->
+        <activity
+            android:name=".module.filemanager.activity.FileManagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".module.filemanager.activity.FileClassifyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".module.filemanager.activity.FileDownloadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".module.filemanager.activity.FileDLClassifyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" /> <!-- file manager end -->
+        <activity
+            android:name=".module.photo.activity.PhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".module.photo.activity.PhotoPreViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+        <activity
+            android:name=".activity.CameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" /> <!-- 视频播放 -->
+        <activity
+            android:name=".module.videoplayer.VideoPlayerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" /> <!-- 聊天群相关的界面 -->
+        <activity
+            android:name=".module.groupchat.ChatDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HxSdkTheme" />
+
+        <receiver
+            android:name=".receiver.HuxinReceiver"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.HOME" />
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="huxin.intent.action.START_SERVER" />
+                <action android:name="huxin.intent.action.PUSH_MSG" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.ForegroundEnablingService" />
+        <service
+            android:name=".service.HuxinStartJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".service.SendMsgService"
+            android:permission="1000" />
+        <service
+            android:name=".service.HuxinService"
+            android:enabled="true"
+            android:exported="false"
+            android:persistent="true">
+            <intent-filter>
+                <action android:name="com.youmai.huxin.service.BOOT_SERVICE" />
+                <action android:name="com.youmai.huxin.service.NEW_OUTGOING_CALL" />
+                <action android:name="com.youmai.huxin.service.IM_LOGIN_OUT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileImProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+        <!-- 高德定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+
+    </application>
+
+</manifest>

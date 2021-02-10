@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- 验证对话框 -->
+    <dimen name="hx_login_width">280dp</dimen>
+    <dimen name="hx_login_title">16dp</dimen>
+
+    <!-- crop -->
+    <dimen name="crop_bar_height">56dp</dimen>
+
+    <!--tip-->
+    <dimen name="font_size_small">15sp</dimen>
+
+    <!--im card-->
+    <dimen name="card_radius">8dp</dimen>
+    <dimen name="card_radius_zero">0dp</dimen>
+    <dimen name="card_font_size_small">15sp</dimen>
+    <dimen name="card_font_size_msmall">12sp</dimen>
+    <dimen name="card_font_size_small_spacing">3dp</dimen>
+    <dimen name="card_lay_msg_margin">6dp</dimen>
+    <dimen name="card_lay_time_marginTop">18dp</dimen>
+    <dimen name="card_head">40dp</dimen>
+    <dimen name="card_head_to_content_margin">8dp</dimen>
+    <dimen name="red_head">60dp</dimen>
+
+
+    <dimen name="im_pic_width">120dp</dimen>
+    <dimen name="im_pic_height">160dp</dimen>
+
+    <!--emotion-->
+    <dimen name="indicator_margin">4dp</dimen>
+    <dimen name="horizontalspit_view_height">0.2dp</dimen>
+    <dimen name="verticalspit_view_width">0.6dp</dimen>
+    <dimen name="bar_height">42dp</dimen>
+
+    <dimen name="title_back_padding">10dp</dimen>
+    <dimen name="title_back_rightpadding">15dp</dimen>
+
+    <!--IMConnectFragment-->
+    <dimen name="hx_im_pop_ment_width">150dp</dimen>
+
+    <!--日期&城市联动器-->
+    <dimen name="hx_pickerview_topbar_height">44dp</dimen> <!-- 顶部按钮栏高度 -->
+    <dimen name="hx_pickerview_topbar_padding">20dp</dimen> <!-- 顶部按钮padding -->
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="hx_pickerview_textsize">20sp</dimen> <!-- 选项文字大小 -->
+
+    <!--wheelView-->
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">18sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+
+
+    <dimen name="color_pay_password_width">0.5dp</dimen>
+	
+	
+    <!--im card-->
+    <dimen name="card_im_text_width">250dp</dimen>
+
+
+    <dimen name="score_edit_height">160dp</dimen>
+
+</resources>

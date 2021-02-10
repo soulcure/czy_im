@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/hx_window_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/hx_activity_header_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/hx_background_color"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/hx_file_manager_select_01"
+            android:textColor="@color/hx_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/hx_file_manager_select_02"
+            android:textColor="@color/hx_text_color" />
+
+        <TextView
+            android:id="@+id/tv_file_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/hx_file_manager_download_content"
+            android:textColor="@color/hx_text_color" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/hx_file_manager_no_file"
+            android:textColor="@color/hx_text_color"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

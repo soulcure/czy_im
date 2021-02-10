@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用字段 -->
+    <string name="hx_confirm">确定</string>
+    <string name="hx_done">完成</string>
+    <string name="hx_cancel">取消</string>
+    <string name="hx_setting">设置</string>
+    <string name="hx_agree">同意</string>
+    <string name="hx_send">发送</string>
+    <string name="hx_select">选择</string>
+    <string name="hx_back">返回</string>
+
+
+    <!-- 登录对话框 -->
+    <string name="hx_prompt">短信发送提示</string>
+
+    <!--IMAdapter-->
+    <string name="from">来自:</string>
+    <string name="add_friend">添加好友请求</string>
+    <string name="add_friend_agree">同意添加你为好友</string>
+    <string name="hx_imadapter_file">文件不能大于50MB!!!</string>
+    <string name="hx_imadapter_wifi_break">网络已断开，请检查！</string>
+
+    <!--挂机策略-->
+    <string name="hx_hook_strategy_msg_emoji">【表情】</string>
+    <string name="hx_hook_strategy_msg_pic">【图片】</string>
+    <string name="hx_hook_strategy_msg_map">【地图】</string>
+    <string name="hx_hook_strategy_msg_voice">【语音】</string>
+    <string name="hx_hook_strategy_msg_tv">【视频】</string>
+    <string name="hx_hook_strategy_msg_file">【文件】</string>
+    <string name="hx_hook_strategy_msg_packet">【红包】</string>
+    <string name="hx_hook_strategy_msg">您有1条未读消息</string>
+    <string name="hx_hook_strategy_hour">小时</string>
+    <string name="hx_hook_strategy_minute">分</string>
+    <string name="hx_hook_strategy_second">秒</string>
+
+    <!--pictureFragment-->
+    <string name="hx_picture_fragment_unit">%1$d张</string>
+
+    <!--phone permission-->
+    <string name="phone_permission_content">发送短信功能需要您开启短信权限</string>
+
+    <!--sdcard permission-->
+    <string name="sdcard_permission_content">呼信需要您开启sdcard访问权限</string>
+
+    <!--permission-->
+    <string name="permission_title">权限提示</string>
+    <string name="permission_content">您需要开启权限</string>
+
+    <string name="hx_upload_file">正在发送文件,退出将自动取消发送</string>
+
+    <!-- 下拉刷新的文本 -->
+    <string name="hx_pull_to_refresh_header_hint_ready">松开即可刷新&#8230;</string>
+    <!--上拉加载更多的文本-->
+    <string name="hx_pull_to_refresh_bottom_hint_normal">上拉可以刷新</string>
+    <string name="hx_pull_to_refresh_bottom_hint_onclick">点击加载更多</string>
+    <string name="hx_pull_to_refresh_bottom_no_more_msg">已经到底啦</string>
+
+    <string name="hx_pull_to_refresh_load_more_text">努力加载中&#8230;</string>
+
+    <!--crop-->
+    <string name="hx_crop__saving">正在保存照片…</string>
+    <string name="hx_crop_wait">请等待…</string>
+    <string name="hx_crop_pick_error">无效的图片</string>
+
+
+    <!-- 当RecyclerView没有查询到任何记录提示 -->
+
+    <string name="hx_picture_save">图片已保存！</string>
+    <string name="hx_save_success">图片已保存到： </string>
+    <string name="hx_network_exception_check">网络异常，请检查网络</string>
+
+    <string name="expand">展开</string>
+    <string name="collapse">收起</string>
+
+    <!--im tool-->
+    <string name="bar_more_type">more</string>
+    <string name="bar_more_close_type">close</string>
+    <string name="bar_emotion_type">emotion</string>
+    <string name="bar_emotion_keyboard_type">keyboard</string>
+    <string name="bar_voice_open_type">voice_open</string>
+    <string name="bar_voice_close_type">voice_close</string>
+    <string name="audio_garbage_indicate">&#160;&#160;&#160;&#160;&#160;<![CDATA[< <]]></string>
+
+    <string name="no_files_found">找不到文件</string>
+    <string name="attachments_title_text">附件 (%1$d/%2$d)</string>
+    <string name="select_photo_text">选择照片</string>
+    <string name="select_doc_text">选择文档</string>
+    <string name="no_camera_exists">没有相机的应用程序！</string>
+    <string name="videos">Videos</string>
+    <string name="images">Images</string>
+    <string name="all_photos">All Photos</string>
+    <string name="all_videos">All Videos</string>
+    <string name="all_files">All Files</string>
+
+    <string name="relogin_title">下线通知</string>
+    <string name="relogin_msg_start">您的账号</string>
+    <string name="relogin_msg">您的账号已经退出登录，请重新登录账号</string>
+    <string name="relogin_confirm">重新登录</string>
+    <string name="relogin_cancel">退出</string>
+    <string name="relogin_info">您的账号已经退出登录，您需要重新登录</string>
+    <!--新版app增加-->
+
+    <string name="im_card_no_remark">暂无备注</string>
+    <string name="hx_voice_tip_normal">按住 说话</string>
+    <string name="hx_voice_tip_error">录音有误</string>
+    <string name="hx_voice_tip_error2">请打开录音权限</string>
+    <string name="hx_voice_tip_cancel">取消录音</string>
+    <string name="hx_str_full_call_background_sound">背景音</string>
+
+    <string name="permission_title_rationale">申请权限</string>
+    <string name="permission_read_audio_rationale">是否开启录音权限</string>
+    <string name="hx_im_card_cope_tip">已复制</string>
+    <string name="hx_im_pop_contact_information">查看联系人</string>
+    <string name="hx_im_pop_theme">沟通主题</string>
+    <string name="hx_im_chat_more_photo">相册</string>
+    <string name="hx_im_chat_more_camera">拍摄</string>
+    <string name="hx_im_chat_more_location">位置</string>
+    <string name="hx_im_chat_more_file">文件</string>
+    <string name="hx_im_chat_red_package">利是</string>
+    <string name="hx_im_chat_more_func">更多</string>
+
+    <string name="hx_im_send_img_count">发送(%1$d/%2$d)</string>
+
+
+    <string name="hx_im_pop_contact_add">新建联系人</string>
+
+    <string name="hx_voice_tip_normal2">松开 取消</string>
+    <string name="hx_voice_tip_normal3">松开 结束</string>
+    <string name="hx_recording_tip">手指上滑，取消发送</string>
+    <string name="hx_recording_tip2">松开手指，取消发送</string>
+    <string name="hx_recording_tip3">手指上滑，取消发送</string>
+    <string name="hx_recording_tip4">说话时间超长</string>
+    <string name="hx_recording_tip5">说话时间太短</string>
+    <string name="hx_dialog_send_person">发送给 %1$s</string>
+
+    <string name="hx_photo_picker_all_images">所有图片</string>
+    <string name="hx_photo_picker_preview">预览</string>
+    <string name="hx_photo_picker_original">原图</string>
+    <string name="hx_im_check_original_img">查看原图</string>
+
+
+    <string name="hxm_no_record_yet">暂无消息哦</string>
+
+    <!-- 收藏 -->
+    <string name="collect_voice_second">%1$d\"</string>
+
+
+    <!-- 群聊 -->
+    <string name="group_default_name">群聊(%1$d)"</string>
+    <string name="group_default_title">%1$s(%2$d)"</string>
+    <string name="group_item_info">[%1$s]"</string>
+
+
+    <string name="hx_dev_you_mai">正在使用有麦开发服务器</string>
+    <string name="hx_color_test">正在使用彩生活测试服务器</string>
+    <string name="hx_color_beta">正在使用彩生活预发布服务器</string>
+
+    <!-- 红包 -->
+    <string name="red_packet_back">未领取的红包，将于24小时后发起退款</string>
+    <string name="red_packet_overdue_info">超过24小时则过期，不可领取</string>
+    <string name="red_packet_can_open">有一个利是在等你</string>
+    <string name="red_packet_cancel">利是已撤回</string>
+    <string name="red_packet_back_money">利是已退款</string>
+    <string name="red_packet_review">查看利是</string>
+    <string name="red_packet_is_open_group">利是已被领完</string>
+    <string name="red_packet_is_open_single">利是已领取</string>
+    <string name="red_packet_overdue">利是已过期</string>
+    <string name="red_packet_receive">领取利是</string>
+    <string name="red_packet_unit1">ƒ %1$s"</string>
+    <string name="red_packet_unit2">%1$s ƒ</string>
+    <string name="group_count">%1$s 人</string>
+    <string name="group_number">%1$d 人</string>
+
+    <string name="send_red_packet_count">发出%1$s个利是共</string>
+    <string name="receive_red_packet_count">收到%1$s个利是共</string>
+    <string name="type_pin">拼手气利是</string>
+    <string name="title_pin">总金额</string>
+    <string name="type_fix">等金额利是</string>
+    <string name="title_fix">单个金额</string>
+    <string name="type_single">个人利是</string>
+    <string name="red_status_done">已领完 %1$d/%2$d个</string>
+    <string name="red_status_overdue">已过期 %1$d/%2$d个</string>
+    <string name="red_status">%1$d/%2$d个</string>
+    <string name="red_status_detail">已领取%1$d/%2$d个，共%3$s/%4$s</string>
+
+    <string name="hxm_tbuser_year">年</string>
+    <string name="hxm_tbuser_month">月</string>
+    <string name="hxm_tbuser_day">日</string>
+    <string name="mmessage_time_yesterday">昨天</string>
+    <string name="mmessage_time_before_yesterday">前天</string>
+    <string name="del_buddy">%1$s开启了好友验证，你还不是他（她）的好友，请先发送好友验证请求，对方验证通过后才能聊天。发送好友验证</string>
+</resources>

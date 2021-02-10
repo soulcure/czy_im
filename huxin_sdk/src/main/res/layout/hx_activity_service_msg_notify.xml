@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <include layout="@layout/hx_im_header_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hxb_line_color" />
+
+
+    <RelativeLayout
+        android:id="@+id/msg_owner"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/hxb_list_item_selector">
+
+        <RelativeLayout
+            android:id="@+id/rel_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/ic_owner"
+                android:layout_width="@dimen/card_head"
+                android:layout_height="@dimen/card_head"
+                android:src="@drawable/color_default_header" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/rel_owner"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:paddingRight="10dp"
+                android:text="客服经理消息"
+                android:textColor="@color/hxb_text_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/msg_owner_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingRight="50dp"
+                android:text=""
+                android:textColor="@color/hxb_subtitle_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/msg_owner_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            android:text="下午15:00"
+            android:textColor="@color/hxb_subtitle_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/hxb_line_color" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/msg_comm"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/hxb_list_item_selector"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/icon_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/ic_comm"
+                android:layout_width="@dimen/card_head"
+                android:layout_height="@dimen/card_head"
+                android:src="@drawable/color_default_header" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/message_time"
+            android:layout_toRightOf="@+id/icon_comm"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_comm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:paddingRight="10dp"
+                android:text="社区消息"
+                android:textColor="@color/hxb_text_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/msg_comm_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingRight="50dp"
+                android:text=""
+                android:textColor="@color/hxb_subtitle_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/msg_comm_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            android:text="下午15:00"
+            android:textColor="@color/hxb_subtitle_color"
+            android:textSize="12sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/hxb_line_color" />
+
+    </RelativeLayout>
+
+</LinearLayout>

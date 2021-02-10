@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="red_title">
+        <item>我收到的</item>
+        <item>我发出的</item>
+    </string-array>
+
+
+    <!--通讯录头数据-->
+    <string-array name="mobile">
+        <item>13000000000</item>
+        <item>13000000001 </item>
+        <item>13000000002</item>
+        <item>13000000003</item>
+        <item>13000000004</item>
+        <item>13000000005</item>
+        <item>13000000006</item>
+        <item>13000000007</item>
+        <item>13000000008</item>
+        <item>13000000009</item>
+        <item>13000000014</item>
+        <item>13000000015</item>
+        <item>13000000016</item>
+        <item>13000000018</item>
+        <item>15900082689</item>
+
+
+    </string-array>
+
+    <string-array name="uuid">
+        <item>61909269-1fcd-4a29-aef0-ab1aabd1934b</item>
+        <item>a0f56168-3059-4863-af17-eb5fe2e5cd01</item>
+        <item>d283142b-9a73-4761-aa38-b35bdebaa006</item>
+        <item>33870d3a-9e0c-4128-9557-6fcac9d078d3</item>
+        <item>c69af652-48d4-4cf2-8725-a00921c66946</item>
+        <item>fd98d05d-b6a2-494b-b59a-e708df463413</item>
+        <item>1c662d0d-1c0b-4454-8a3c-8e76d54f701c</item>
+        <item>0b4b0ded-51be-46d2-91c5-d0e421d224ad</item>
+        <item>718ff535-e42d-4139-934c-7320d8db7785</item>
+        <item>3a4594fe-2cd2-40f6-a88c-7bba5f74cd4f</item>
+        <item>27fb6658-0f1b-4160-b503-5955b12daf7e</item>
+        <item>568d7597-15ba-44a8-90ef-ba6ef02ccf41</item>
+        <item>8d75f26a-88f6-4577-b090-29d9882d58b1</item>
+        <item>63633b8c-cc1c-4b08-9e74-59cb2f29ecf3</item>
+        <item>3fe77b7d-0ab5-4895-971b-1794a5ea9a3d</item>
+    </string-array>
+
+    <string-array name="nick_name">
+        <item>刘洪浩</item>
+        <item>陈琼瑶</item>
+        <item>访客渐远</item>
+        <item>冯奋楷</item>
+        <item>李珊珊</item>
+        <item>陈闻迪</item>
+        <item>李深</item>
+        <item>敖国跃</item>
+        <item>冯艺武</item>
+        <item>李文</item>
+        <item>访客</item>
+        <item>小新二</item>
+        <item>访客</item>
+        <item>访客130****0018</item>
+        <item>访客159****2689</item>
+    </string-array>
+
+    <string-array name="avatar">
+        <item>http://avatar.ice.colourlife.com/avatar?uid=liuhonghaohx</item>
+        <item>http://avatar.ice.colourlife.com/avatar?uid=chenqiongyao</item>
+        <item>https://cimg-czytest.colourlife.com/images/2017/12/31/22/050784033.jpg</item>
+        <item>http://avatar.ice.colourlife.com/avatar?uid=fengfengkaihx</item>
+        <item>http://avatar.ice.colourlife.com/avatar?uid=lishanshan</item>
+        <item>http://avatar.ice.colourlife.com/avatar?uid=chenwendi</item>
+        <item>http://avatar.ice.colourlife.com/avatar?uid=lishen01</item>
+        <item>http://avatar.ice.colourlife.com/avatar?uid=aoguoyue</item>
+        <item>http://avatar.ice.colourlife.com/avatar?uid=fengyiwu</item>
+        <item>http://avatar.ice.colourlife.com/avatar?uid=liwen02</item>
+        <item>https://cimg-czytest.colourlife.com/images/2017/12/31/17/524773766.jpg</item>
+        <item>https://cimg-czytest.colourlife.com/images/2017/12/31/22/362978685.jpg</item>
+        <item>https://cimg-czytest.colourlife.com/images/2017/04/27/23/553863549.jpg</item>
+        <item>https://cimg-czytest.colourlife.com/images/2017/04/27/23/553863549.jpg</item>
+        <item>https://cimg-czytest.colourlife.com/images/2017/04/27/23/553863549.jpg</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>2</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+
+</resources>

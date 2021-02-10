@@ -1,0 +1,7 @@
+<resources>
+
+    <!--im card-->
+    <dimen name="card_im_text_width">280dp</dimen>
+
+    <dimen name="score_edit_height">170dp</dimen>
+</resources>

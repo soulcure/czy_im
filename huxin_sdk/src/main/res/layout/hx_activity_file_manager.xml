@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/hx_activity_header_title" />
+
+    <!--line1-->
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/tv_jump_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:drawableTop="@drawable/hx_file_manager_txt_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/hx_file_manager_txt"
+                android:textColor="@color/hxs_color_black4"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_txt_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="(0)"
+                android:textColor="@color/hxs_color_gray15"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_jump_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:drawableTop="@drawable/hx_file_manager_video_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/hx_file_manager_video"
+                android:textColor="@color/hxs_color_black4"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_video_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="(0)"
+                android:textColor="@color/hxs_color_gray15"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--line2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/tv_jump_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:drawableTop="@drawable/hx_file_manager_music_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/hx_file_manager_music"
+                android:textColor="@color/hxs_color_black4"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_music_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="(0)"
+                android:textColor="@color/hxs_color_gray15"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_jump_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:drawableTop="@drawable/hx_file_manager_download_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/hx_file_manager_download"
+                android:textColor="@color/hxs_color_black4"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_download_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="(0)"
+                android:textColor="@color/hxs_color_gray15"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--line3-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/tv_jump_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:drawableTop="@drawable/hx_file_manager_app_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/hx_file_manager_app"
+                android:textColor="@color/hxs_color_black4"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_app_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="(0)"
+                android:textColor="@color/hxs_color_gray15"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_jump_zip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:drawableTop="@drawable/hx_file_manager_zip_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/hx_file_manager_zip"
+                android:textColor="@color/hxs_color_black4"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_zip_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="(0)"
+                android:textColor="@color/hxs_color_gray15"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

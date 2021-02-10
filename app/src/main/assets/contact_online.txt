@@ -1,0 +1,31 @@
+{
+	"code": 0,
+	"message": "success",
+	"content": [{
+			"user_id": 4269946,
+			"uuid": "bd9996b4-4604-4cd5-88bf-d0dcbde7ebbd",
+			"mobile": "15201442038",
+			"state": 0,
+			"portrait": "",
+			"gender": 0,
+			"nick_name": "王敏",
+			"name": "王敏",
+			"community_uuid": "0024f0f0-db5b-4125-806a-d42b44a77845",
+			"community_name": "嘉峪关路街道-嘉峪关东路345-349号",
+			"comment": "张测1"
+		}, {
+			"user_id": 4270265,
+			"uuid": "d2683c02-8fee-48e7-9801-05cbe1a90079",
+			"mobile": "13147041032",
+			"state": 0,
+			"portrait": "",
+			"gender": 0,
+			"nick_name": "张柠柠",
+			"name": "张柠柠",
+			"community_uuid": null,
+			"community_name": null,
+			"comment": "张测2"
+		}
+	],
+	"contentEncrypt": ""
+}

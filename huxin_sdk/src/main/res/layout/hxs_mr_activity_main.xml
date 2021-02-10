@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <!-- 拍视频 -->
+    <com.youmai.hxsdk.module.movierecord.MovieRecorderView
+        android:id="@+id/mr_movieRecorderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp" />
+
+    <!-- 返回 -->
+    <Button
+        android:id="@+id/mr_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:onClick="onBack"
+        android:text="@string/hx_back"
+        android:textColor="@color/hx_color_white"
+        android:textSize="18sp" />
+
+    <!-- 转换 -->
+    <ImageButton
+        android:id="@+id/mr_btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="18dp"
+        android:background="@android:color/transparent"
+        android:onClick="onChangeCamera"
+        android:src="@drawable/hxs_mr_camera_change_selector" />
+
+    <FrameLayout
+        android:id="@+id/mr_bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="#7c000000">
+        <!-- 按住拍 -->
+        <Button
+            android:id="@+id/mr_shoot_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/hxs_mr_bg_movie_add_shoot"
+            android:text="@string/hxm_viewstub_norecord_take_photo"
+            android:textColor="#ECEBF1" />
+    </FrameLayout>
+
+    <!--提示-->
+    <TextView
+        android:id="@+id/mr_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mr_bottom_ly"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/hxs_mr_shape_tip_bg"
+        android:padding="7dp"
+        android:text="@string/hxs_mr_tip_1"
+        android:textColor="@color/hx_main_color"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

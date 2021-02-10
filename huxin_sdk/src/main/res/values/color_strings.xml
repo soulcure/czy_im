@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--消息类型-->
+    <string name="message_type">[未知]</string>
+    <string name="message_type_1">[表情]</string>
+    <string name="message_type_3">[图片]</string>
+    <string name="message_type_4">[位置]</string>
+    <string name="message_type_5">[视频]</string>
+    <string name="message_type_sounds">[语音]</string>
+    <string name="message_type_file">[文件]</string>
+    <string name="message_type_member_changed">[成员变更]</string>
+    <string name="message_type_name_changed">[群名变更]</string>
+    <string name="message_type_owner_changed">[群主转让]</string>
+    <string name="message_red_package">[彩利是]</string>
+    <string name="message_red_package_open">[彩利是被领取]</string>
+    <string name="message_open_red_packet_success">[你领取了彩利是]</string>
+    <string name="buddy_agree">[好友验证通过]</string>
+    <string name="buddy_black">[消息被拒收]</string>
+    <string name="buddy_del">[好友验证]</string>
+
+    <string name="message_time_yesterday">昨天</string>
+    <string name="message_time_before_yesterday">前天</string>
+
+    <!-- gloabl search -->
+    <string name="hx_common_phone_number">电话号码</string>
+    <string name="hx_common_name">名字</string>
+    <string name="hx_common_message_record">沟通记录</string>
+    <string name="hx_common_new_contact">新建联系人</string>
+    <string name="hx_common_send_sms">发送消息</string>
+    <string name="hx_common_view_more_message_record">查看更多沟通记录</string>
+    <string name="hx_common_more_message_record">更多沟通记录</string>
+    <string name="hx_common_more_message_list_title">共%1$d条与\"%2$s\"相关的沟通记录</string>
+    <string name="hx_common_more_message_list_info">%1$d条相关沟通记录</string>
+    <string name="hx_common_gloabl_can_seach">可搜索联系人与沟通记录</string>
+    <string name="hx_common_global_search_no_finded">暂无搜索结果</string>
+    <string name="hx_common_global_can_input">可输入内容</string>
+    <string name="hx_common_global_can_do">您可以做以下操作</string>
+    <string name="hx_contacts_search_title">联系人</string>
+    <string name="hx_contacts_view_more_contacts">查看更多联系人</string>
+
+    <string name="hx_common_app_record">应用</string>
+    <string name="hx_common_view_more_app_record">查看更多应用</string>
+
+    <string name="hx_im_server_ack">您对%1$s的服务满意吗?</string>
+
+    <string name="very_dissatisfied">非常不满意</string>
+    <string name="dissatisfied">不满意</string>
+    <string name="general">一般</string>
+    <string name="satisfied">满意</string>
+    <string name="very_satisfied">非常满意</string>
+
+
+    <string name="solve_nothing">什么事情都解决不了</string>
+    <string name="not_reached">经常联系不上</string>
+    <string name="slow">服务响应速度慢</string>
+
+    <string name="profession">很专业</string>
+    <string name="solve_everything">什么事情都能解决</string>
+    <string name="fast">服务响应速度快</string>
+
+    <string name="dissatisfied_hint">什么事情都解决不了，经常联系不上，服务响应速度慢</string>
+    <string name="satisfied_hint">其他想说的意见或者建议（500字以内欢迎拍砖）</string>
+</resources>

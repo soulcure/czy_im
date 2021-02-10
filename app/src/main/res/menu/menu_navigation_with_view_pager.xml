@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@mipmap/ic_msg"
+        android:title="消息" />
+
+    <item
+        android:id="@+id/navigation_contact"
+        android:icon="@mipmap/tongxunlu"
+        android:title="联系人" />
+
+    <item
+        android:id="@+id/navigation_job"
+        android:icon="@mipmap/weiwuguan"
+        android:title="群组" />
+
+    <item
+        android:id="@+id/navigation_com"
+        android:icon="@mipmap/weiwuguan"
+        android:title="社群" />
+
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@mipmap/wode"
+        android:title="我的" />
+</menu>

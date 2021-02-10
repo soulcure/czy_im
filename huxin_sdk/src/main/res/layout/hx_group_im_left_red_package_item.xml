@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/sender_date"
+        style="@style/im_card_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hx_fragment_im_data" />
+
+    <LinearLayout style="@style/im_content_card_style">
+
+        <ImageView
+            android:id="@+id/sender_iv"
+            android:layout_width="@dimen/card_head"
+            android:layout_height="@dimen/card_head"
+            android:src="@drawable/hx_im_user_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_head_to_content_margin"
+            android:layout_marginRight="@dimen/card_head_to_content_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成员1" />
+
+            <RelativeLayout
+                android:id="@+id/item_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hx_red_package_status"
+                android:clickable="true"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/img_red_package"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_send_red_package" />
+
+                <TextView
+                    android:id="@+id/tv_red_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/img_red_package"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/img_red_package"
+                    android:ems="9"
+                    android:singleLine="true"
+                    android:text="恭喜发财，大吉大利"
+                    android:textColor="@color/hx_color_white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_red_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/img_red_package"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/img_red_package"
+                    android:text="领取利是"
+                    android:textColor="@color/hx_color_white"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

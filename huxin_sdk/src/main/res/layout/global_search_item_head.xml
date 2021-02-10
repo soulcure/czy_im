@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/global_search_item_head"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/global_search_item_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hxs_color_white"
+        android:textSize="12sp"
+        android:textColor="#9ba5b2"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:text="联系人" />
+
+    <View
+        android:id="@+id/global_search_item_head_title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/hxb_line_color" />
+</RelativeLayout>

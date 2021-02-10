@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hxs_color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/group_header_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|top"
+            android:lineSpacingExtra="2dp"
+            android:maxLength="500"
+            android:padding="16dp"
+            android:textColor="@color/color_theme_main"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_user_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="left|top"
+            android:lineSpacingExtra="2dp"
+            android:maxLength="500"
+            android:padding="16dp"
+            android:textColor="@color/color_theme_main"
+            android:textCursorDrawable="@drawable/edit_cursor_shape"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_not_owner_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="1px"
+            android:background="#979797" />
+
+        <TextView
+            android:id="@+id/group_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="仅群主可编辑"
+            android:textColor="#979797" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="1px"
+            android:background="#979797" />
+
+    </LinearLayout>
+
+</LinearLayout>

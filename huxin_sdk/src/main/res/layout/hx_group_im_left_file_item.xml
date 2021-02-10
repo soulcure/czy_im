@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/sender_date"
+        style="@style/im_card_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hx_fragment_im_data" />
+
+    <LinearLayout style="@style/im_content_card_style">
+
+        <ImageView
+            android:id="@+id/sender_iv"
+            android:layout_width="@dimen/card_head"
+            android:layout_height="@dimen/card_head"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/hx_im_user_header" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="成员1" />
+
+
+            <RelativeLayout
+                android:id="@+id/item_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/hx_im_voice_bg_left"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/file_iv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="14dp"
+                    android:src="@drawable/hx_im_file_iv" />
+
+                <TextView
+                    android:id="@+id/file_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_toLeftOf="@id/file_iv"
+                    android:singleLine="true"
+                    android:text="abd.xt"
+                    android:textColor="@color/hx_item_left_font"
+                    android:textSize="@dimen/font_size_small" />
+
+                <ProgressBar
+                    android:id="@+id/file_pbar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/file_name"
+                    android:layout_marginTop="6dp"
+                    android:layout_toLeftOf="@id/file_iv"
+                    android:progressDrawable="@drawable/hx_im_progress"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/file_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/file_iv"
+                    android:text="13.5KB"
+                    android:textSize="@dimen/card_font_size_msmall" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

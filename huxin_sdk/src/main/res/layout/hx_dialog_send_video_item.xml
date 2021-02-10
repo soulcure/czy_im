@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="24dp">
+
+        <com.youmai.hxsdk.view.AutoHeightImageView
+            android:id="@+id/dialog_send_video_img"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:minWidth="160dp"
+            android:src="@drawable/hx_im_default_img"
+            android:transitionName="imimage" />
+
+        <TextView
+            android:id="@+id/dialog_send_video_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dialog_send_video_img"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/hx_video_time_bg"
+            android:gravity="right"
+            android:paddingBottom="2dp"
+            android:paddingRight="12dp"
+            android:paddingTop="2dp"
+            android:text="00:00"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/dialog_send_video_play_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:src="@drawable/hx_im_video_play_small_icon" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/global_search_status_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/global_search_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="#9ba5b2"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/global_search_empty_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/global_search_button_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:drawableTop="@drawable/hx_global_search_empty_phone"
+                android:text="@string/hx_common_phone_number"
+                android:textColor="#9ba5b2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/global_search_button_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:drawableTop="@drawable/hx_global_search_empty_name"
+                android:text="@string/hx_common_name"
+                android:textColor="#9ba5b2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/global_search_button_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:drawableTop="@drawable/hx_global_search_empty_message"
+                android:text="@string/hx_common_message_record"
+                android:textColor="#9ba5b2"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

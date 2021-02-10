@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/hx_im_header_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/hxs_color_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_self_header"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/color_default_header" />
+
+            <TextView
+                android:id="@+id/tv_self_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Name"
+                android:textColor="@color/color_text_gray2"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_add_more"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ll"
+            android:src="@drawable/hx_add_group_member" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_group_bg2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/hxs_color_white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="置顶聊天"
+            android:textColor="@color/color_theme_main"
+            android:textSize="15sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_group_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/hxb_list_item_selector"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="消息置顶"
+            android:textColor="@color/color_theme_main"
+            android:textSize="15sp" />
+
+        <Switch
+            android:id="@+id/switch_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:theme="@style/HxBaseSdkTheme" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_group_bg2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_group_notify"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/hxb_list_item_selector"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="消息免打扰"
+            android:textColor="@color/color_theme_main"
+            android:textSize="15sp" />
+
+        <Switch
+            android:id="@+id/switch_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:theme="@style/HxBaseSdkTheme" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_group_bg2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_add_black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/hxb_list_item_selector"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="加入黑名单"
+            android:textColor="@color/color_theme_main"
+            android:textSize="15sp" />
+
+        <Switch
+            android:id="@+id/switch_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:theme="@style/HxBaseSdkTheme" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_group_bg2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_clear_chat_records"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hxb_list_item_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空聊天记录"
+            android:textColor="@color/color_theme_main"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_group_bg2" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sender_date"
+        style="@style/im_card_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hx_fragment_im_data" />
+
+    <LinearLayout
+        style="@style/im_content_card_style"
+        android:gravity="right">
+
+        <include
+            layout="@layout/hx_im_send_status_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <ImageView
+                android:id="@+id/sender_img"
+                android:layout_width="@dimen/im_pic_width"
+                android:layout_height="@dimen/im_pic_height"
+                android:scaleType="fitStart" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/sender_iv"
+            android:layout_width="@dimen/card_head"
+            android:layout_height="@dimen/card_head"
+            android:src="@drawable/hx_im_user_header" />
+    </LinearLayout>
+
+</LinearLayout>

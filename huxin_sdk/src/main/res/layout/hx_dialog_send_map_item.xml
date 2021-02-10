@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="24dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="16dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        card:cardCornerRadius="4dp"
+        card:cardElevation="2dp"
+        card:contentPaddingTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dialog_send_map_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="中科大厦裙楼"
+                android:textColor="@color/hx_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dialog_send_map_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="某某路"
+                android:textColor="@color/hx_text_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/dialog_send_map_img"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@id/dialog_send_map_address_text"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/card_def_map" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hx_im_record_bg"
+    android:gravity="center_horizontal"
+    android:minWidth="160dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/hx_dialog_record_tip_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/hx_btn_voice_icon_pre" />
+
+    <TextView
+        android:id="@+id/hx_dialog_record_tip_remaining_time_text"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#F2F2F2"
+        android:textSize="48sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/hx_dialog_record_tip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/hx_record_tip_bg"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp"
+        android:text="松开 结束"
+        android:textColor="#F2F2F2"
+        android:textSize="15sp" />
+
+</LinearLayout>
